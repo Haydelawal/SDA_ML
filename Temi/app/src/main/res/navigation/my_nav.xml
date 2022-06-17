@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/animationFragment">
+
+    <activity
+        android:id="@+id/animationActivity"
+        android:name="com.hayde117.temi.AnimationActivity"
+        android:label="activity_animation"
+        tools:layout="@layout/activity_animation" />
+    <fragment
+        android:id="@+id/animationFragment"
+        android:name="com.hayde117.temi.AnimationFragment"
+        android:label="fragment_animation"
+        tools:layout="@layout/fragment_animation" />
+</navigation>
