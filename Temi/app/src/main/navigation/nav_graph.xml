@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/itemsFragment"
-        android:name="com.hayde117.temi.ItemsFragment"
+        android:name="com.hayde117.temi.database.fragments.list.ItemsFragment"
         android:label="fragment_items"
         tools:layout="@layout/fragment_items" />
     <fragment
         android:id="@+id/viewItemsFragment"
-        android:name="com.hayde117.temi.ViewItemsFragment"
+        android:name="com.hayde117.temi.database.fragments.view.ViewItemsFragment"
         android:label="fragment_view_items"
         tools:layout="@layout/fragment_view_items" />
 </navigation>

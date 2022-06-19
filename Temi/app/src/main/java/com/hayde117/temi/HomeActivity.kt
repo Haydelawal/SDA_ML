@@ -83,9 +83,6 @@ class HomeActivity : AppCompatActivity() {
 
                 activityViewModel.saveData()
 
-//               var value1 = class1.toInt()
-//               var value2 = class2.toInt()
-
 
                 val intent = Intent(this, AnimationActivity::class.java)
 
@@ -96,7 +93,7 @@ class HomeActivity : AppCompatActivity() {
 
             } else {
                 Toast.makeText(this@HomeActivity, "Please enter a message.", Toast.LENGTH_LONG)
-                    .show();
+                    .show()
             }
 
         }

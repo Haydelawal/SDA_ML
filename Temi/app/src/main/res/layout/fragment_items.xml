@@ -2,11 +2,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ItemsFragment"
+    tools:context=".database.fragments.list.ItemsFragment"
     >
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_tasks"
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

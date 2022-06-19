@@ -7,12 +7,21 @@
 
     <fragment
         android:id="@+id/itemsFragment"
-        android:name="com.hayde117.temi.ItemsFragment"
+        android:name="com.hayde117.temi.database.fragments.list.ItemsFragment"
         android:label="fragment_items"
-        tools:layout="@layout/fragment_items" />
+        tools:layout="@layout/fragment_items"
+        >
+        <action
+            android:id="@+id/action_itemsFragment_to_viewItemsFragment"
+            app:destination="@id/viewItemsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/viewItemsFragment"
-        android:name="com.hayde117.temi.ViewItemsFragment"
+        android:name="com.hayde117.temi.database.fragments.view.ViewItemsFragment"
         android:label="fragment_view_items"
-        tools:layout="@layout/fragment_view_items" />
+        tools:layout="@layout/fragment_view_items" >
+        <action
+            android:id="@+id/action_viewItemsFragment_to_itemsFragment"
+            app:destination="@id/itemsFragment" />
+    </fragment>
 </navigation>
