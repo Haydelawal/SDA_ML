@@ -8,6 +8,7 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.hayde117.temi.R
 import com.hayde117.temi.databinding.ActivityAnimationBinding.inflate
@@ -22,7 +23,13 @@ class DbHomeActivity : AppCompatActivity() {
         binding = ActivityDbHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        setupActionBarWithNavController(findNavController(R.id.nav_host_fragment))
+//        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+//        val navController = navHostFragment.navController
+
+//        NavHostFragment.findNavController(this);
+//
+//        Navigation.findNavController(requireActivity(), R.id.MAIN_NAV_HOST_FRAGMENT);
+
 
     }
 
@@ -31,14 +38,14 @@ class DbHomeActivity : AppCompatActivity() {
 //        return navController.navigateUp() || super.onSupportNavigateUp()
 //    }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.db_menu, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return true
-    }
+//    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+//        menuInflater.inflate(R.menu.db_menu, menu)
+//        return true
+//    }
+//
+//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//        return true
+//    }
 
 
 

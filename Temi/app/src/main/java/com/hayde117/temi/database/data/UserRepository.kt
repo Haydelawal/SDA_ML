@@ -1,6 +1,8 @@
 package com.hayde117.temi.database.data
 
 import androidx.lifecycle.LiveData
+import androidx.room.Query
+import kotlinx.coroutines.flow.Flow
 
 class UserRepository(private val userDao: UserDao) {
     // UserRepository
@@ -23,4 +25,8 @@ class UserRepository(private val userDao: UserDao) {
     suspend fun deleteAllUsers() {
         userDao.deleteAllUsers()
     }
+
+//     fun searchDatabase(searchQuery: String): Flow<List<User>> {
+//         return userDao.searchDatabase(searchQuery)
+//     }
 }

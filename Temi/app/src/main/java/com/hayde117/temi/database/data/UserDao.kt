@@ -2,6 +2,7 @@ package com.hayde117.temi.database.data
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface UserDao {
@@ -22,4 +23,7 @@ interface UserDao {
 
     @Query("SELECT * FROM user_table ORDER BY id ASC")
     fun readAllData(): LiveData<List<User>>
+
+//    @Query("SELECT * FROM user_table WHERE message LIKE :searchQuery")
+//    fun searchDatabase(searchQuery: String): Flow<List<User>>
 }

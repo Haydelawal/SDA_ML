@@ -8,6 +8,7 @@
         <entry key="..\:/Users/LAWAL/AndroidStudioProjects/Temi/app/src/main/res/drawable/android_icon.xml" value="0.15885416666666666" />
         <entry key="..\:/Users/LAWAL/AndroidStudioProjects/Temi/app/src/main/res/drawable/circle.xml" value="0.2846153846153846" />
         <entry key="..\:/Users/LAWAL/AndroidStudioProjects/Temi/app/src/main/res/drawable/circle2.xml" value="0.2846153846153846" />
+        <entry key="..\:/Users/LAWAL/AndroidStudioProjects/Temi/app/src/main/res/drawable/menu_view.xml" value="0.136" />
         <entry key="..\:/Users/LAWAL/AndroidStudioProjects/Temi/app/src/main/res/layout/activity_animation.xml" value="0.13069908814589665" />
         <entry key="..\:/Users/LAWAL/AndroidStudioProjects/Temi/app/src/main/res/layout/activity_db_home.xml" value="0.13272543059777103" />
         <entry key="..\:/Users/LAWAL/AndroidStudioProjects/Temi/app/src/main/res/layout/activity_display.xml" value="0.1671195652173913" />
@@ -15,10 +16,11 @@
         <entry key="..\:/Users/LAWAL/AndroidStudioProjects/Temi/app/src/main/res/layout/activity_main.xml" value="0.12552083333333333" />
         <entry key="..\:/Users/LAWAL/AndroidStudioProjects/Temi/app/src/main/res/layout/fragment_animation.xml" value="0.13069908814589665" />
         <entry key="..\:/Users/LAWAL/AndroidStudioProjects/Temi/app/src/main/res/layout/fragment_items.xml" value="0.13272543059777103" />
-        <entry key="..\:/Users/LAWAL/AndroidStudioProjects/Temi/app/src/main/res/layout/fragment_view_items.xml" value="0.12364130434782608" />
+        <entry key="..\:/Users/LAWAL/AndroidStudioProjects/Temi/app/src/main/res/layout/fragment_view_items.xml" value="0.22" />
         <entry key="..\:/Users/LAWAL/AndroidStudioProjects/Temi/app/src/main/res/layout/item_tasks.xml" value="0.33" />
         <entry key="..\:/Users/LAWAL/AndroidStudioProjects/Temi/app/src/main/res/menu/db_menu.xml" value="0.25277777777777777" />
         <entry key="..\:/Users/LAWAL/AndroidStudioProjects/Temi/app/src/main/res/menu/home_menu.xml" value="0.12604166666666666" />
+        <entry key="..\:/Users/LAWAL/AndroidStudioProjects/Temi/app/src/main/res/menu/menu_view.xml" value="0.12552083333333333" />
       </map>
     </option>
   </component>

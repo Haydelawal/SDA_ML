@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.hayde117.temi.R
 import com.hayde117.temi.database.data.User
 import com.hayde117.temi.databinding.ItemTasksBinding
+import kotlinx.coroutines.flow.Flow
 
 class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder> () {
 
@@ -43,18 +44,13 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder> () {
             textValue.text = currentItem.message
         }
 
+        holder.binding.itemTasks.setOnClickListener {
+            val action = ItemsFragmentDirections.actionItemsFragmentToViewItemsFragment(currentItem)
+
+            holder.binding.itemTasks.findNavController().navigate(action)
+        }
 
 
-
-//        holder.itemView.findViewById<TextView>(R.id.id_txt).text = currentItem.id.toString()
-//        holder.itemView.findViewById<TextView>(R.id.firstName_txt).text = currentItem.firstName.toString()
-//        holder.itemView.findViewById<TextView>(R.id.lastName_txt).text = currentItem.lastName.toString()
-//        holder.itemView.findViewById<TextView>(R.id.age_txt).text = currentItem.age.toString()
-//
-//        holder.itemView.findViewById<View>(R.id.rowLayout).setOnClickListener {
-//            val action = ListFragmentDirections.actionListFragmentToUpdateFragment(currentItem)
-//            holder.itemView.findNavController().navigate(action)
-//        }
 
 
     }
@@ -62,6 +58,12 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder> () {
         this.userlist = user
         notifyDataSetChanged()
     }
+
+//    fun setDataSearch(user: List<User>)
+//    {
+//        userlist = user
+//        notifyDataSetChanged()
+//    }
 
 
 

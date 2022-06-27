@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/itemsFragment"
         android:name="com.hayde117.temi.database.fragments.list.ItemsFragment"
-        android:label="fragment_items"
+        android:label="All Messages"
         tools:layout="@layout/fragment_items"
         >
         <action
@@ -18,10 +18,13 @@
     <fragment
         android:id="@+id/viewItemsFragment"
         android:name="com.hayde117.temi.database.fragments.view.ViewItemsFragment"
-        android:label="fragment_view_items"
+        android:label="Previous Result Information"
         tools:layout="@layout/fragment_view_items" >
         <action
             android:id="@+id/action_viewItemsFragment_to_itemsFragment"
             app:destination="@id/itemsFragment" />
+        <argument
+            android:name="currentUser"
+            app:argType="com.hayde117.temi.database.data.User" />
     </fragment>
 </navigation>

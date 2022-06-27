@@ -7,6 +7,7 @@
         android:title=""
         android:icon="@drawable/ic_search"
         app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
         />
 
     <item android:id="@+id/sort"
@@ -17,13 +18,13 @@
 
         <menu>
             <item android:id="@+id/by_name"
-                android:title="Clear Input Fiels"
+                android:title="Order By Name"
                 app:showAsAction="never"
                 android:icon="@drawable/ic_cancel"
                 />
 
             <item android:id="@+id/by_date"
-                android:title="Previous Results"
+                android:title="Order By Date Created"
                 app:showAsAction="never"
                 android:icon="@drawable/ic_data"
                 android:iconTintMode="screen"
@@ -34,29 +35,14 @@
 
     </item>
 
-    <item android:id="@+id/more"
+    <item android:id="@+id/delete"
         android:title=""
-        android:icon="@drawable/ic_baseline_more_vert_24"
+        android:icon="@drawable/ic_trash"
         app:showAsAction="always"
-        >
-
-        <menu>
-            <item android:id="@+id/clear_menu"
-                android:title="Clear Input Fiels"
-                app:showAsAction="never"
-                android:icon="@drawable/ic_cancel"
-                />
-
-            <item android:id="@+id/saved_data"
-                android:title="Previous Results"
-                app:showAsAction="never"
-                android:icon="@drawable/ic_data"
-                android:iconTintMode="screen"
-                android:iconTint="@color/purple_500"
-                />
-
-        </menu>
 
 
-    </item>
+
+
+
+    />
 </menu>
